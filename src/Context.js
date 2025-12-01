@@ -11,7 +11,7 @@ export const Store = ({ children }) => {
     return s ? JSON.parse(s) : [];
   });
 
-  // Save on change
+
   useEffect(() => {
     localStorage.setItem('shop-data', JSON.stringify(cart));
   }, [cart]);
